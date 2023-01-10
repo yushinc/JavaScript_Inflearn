@@ -1,0 +1,45 @@
+html, body {
+    font-family:Helvetica, Arial, sans-serif;
+    margin:0;
+}
+
+.panel-faq-container {
+    margin-bottom:-16px;
+}
+
+.panel-faq-title {
+    color:#0c6e2b;
+    cursor:pointer; /* 제목에 마우스 올리면 커서 모양이 포인터로 바뀜 */
+}
+
+.panel-faq-answer {
+    /* solution 1: display 속성 사용 */
+    /* padding:15px;
+    display:none; */
+
+    /* solution 2: 높이를 0으로 설정하고 
+       overflow(p 태그의 글씨는 여전히 보이므로)를 hidden으로 */
+    height:0px;
+    overflow:hidden;
+}
+
+#btn-all-close {
+    margin-bottom:10px;
+    background-color: #726996;
+    border:none;
+    color: #FFFFFF;
+    cursor:pointer;
+    padding: 10px 25px; /* (T, R, B, L) / (T, B)(R, L) */
+    float:right;
+    border-radius: 5px;
+}
+
+#btn-all-close:hover {
+    background-color: yellow;
+    color: #000;
+    transition:all 0.4s; /* 버튼에 마우스 올릴때 색 변환 시간 설정 */
+}
+
+/* .active {
+    
+} */
