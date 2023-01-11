@@ -21,6 +21,7 @@ html, body {
        overflow(p 태그의 글씨는 여전히 보이므로)를 hidden으로 */
     height:0px;
     overflow:hidden;
+    transition:all 0.4s;
 }
 
 #btn-all-close {
@@ -40,6 +41,8 @@ html, body {
     transition:all 0.4s; /* 버튼에 마우스 올릴때 색 변환 시간 설정 */
 }
 
-/* .active {
-    
-} */
+.active {
+    height:300px;
+    display:block;
+    /* active 클래스에 transition 작성 시 add 할때만 애니메이션 발생 remove 할 때는 발생하지 않아 부자연스럽다. */
+} 

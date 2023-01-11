@@ -4,8 +4,14 @@
         <meta charset="UTF-8">
         <title>Practical Exam - Accordion</title>
         <link rel="stylesheet" href="accordion.css"> <!-- css 파일 -->
-<!--         <script src="accordion.js"></script>  js 파일 -->
- -->        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <script src="accordion.js"></script>  <!-- js 파일 -->
+        <!-- script 태그가 맨 위 head 태그 안에 있다면 js는 인터프리터 언어이므로 내가 작성한 테이블의 panel-faq-container가 
+         로드되지 않아 콘솔창에 해당 태그 개수 출력 시 0으로 뜬다. script 태그를 내가 작성한 코드 이후에 배치하면 해결
+         or
+         js 코드를 window.onload() 함수 내부에 작성하면 코드가 모두 로드된 후 실행되므로 head 태그 안에 작성하여도 무관 -->
+        
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container">
@@ -65,7 +71,7 @@
                         </td>
                         <td>회원가입</td>
                         <td>2032.02.02</td>
-                        <td>84</td>
+                        <td>35</td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -116,8 +122,14 @@
                         <td>2032.05.05</td>
                         <td>84</td>
                     </tr>
+                    <tr class="bg-success">
+                        <td class="text-left" colspan=4>자주 묻는 질문 총 합계</td>
+                        <td>182</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </body>
+
+    
 </html>
